@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Conversor de monedas</string>
+    <string name="ingresemoneda">Ingrese valor</string>
+    <string name="valorpordefecto">0</string>
+    <string name="textconversion">Conversión:</string>
+    <string name="convertir">Convertir</string>
+    <string-array name="moneda_actual">
+        <item>Moneda Actual</item>
+        <item>Peso Colombiano</item>
+        <item>Euro</item>
+        <item>Dólar</item>
+        <item>Libra Esterlina</item>
+    </string-array>
+    <string-array name="moneda_a_conv">
+        <item>Moneda A Convertir</item>
+        <item>Peso Colombiano</item>
+        <item>Euro</item>
+        <item>Dólar</item>
+        <item>Libra Esterlina</item>
+    </string-array>
+</resources>

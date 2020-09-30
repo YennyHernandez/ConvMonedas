@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo_ingvalor_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/ingresemoneda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ing_valor_editTextNumber"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/valorpordefecto"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_ingvalor_textView" />
+
+    <Spinner
+        android:id="@+id/monedaactual_spinner"
+        android:layout_width="350sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="32dp"
+        android:entries="@array/moneda_actual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ing_valor_editTextNumber" />
+    <Spinner
+        android:id="@+id/moneda_a_conv_spinner"
+        android:layout_width="350sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="4dp"
+        android:entries="@array/moneda_a_conv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monedaactual_spinner" />
+
+    <Button
+        android:id="@+id/convertir_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/convertir"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moneda_a_conv_spinner" />
+
+    <TextView
+        android:id="@+id/mostrar_resultado_textView2"
+        android:layout_width="356dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/textconversion"
+        android:textSize="24sp"
+        app:drawableLeftCompat="@mipmap/imagen_mundo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/convertir_button" />
+
+    <TextView
+        android:id="@+id/mostar_resultado_final_text_view"
+        android:layout_width="355dp"
+        android:layout_height="47dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mostrar_resultado_textView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

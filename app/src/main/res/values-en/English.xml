@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Currency converter</string>
+    <string name="ingresemoneda">Enter value</string>
+    <string name="valorpordefecto">0</string>
+    <string name="textconversion">Conversion:</string>
+    <string name="convertir">turn into</string>
+    <string-array name="moneda_actual">
+        <item>Current currency</item>
+        <item>Peso Colombiano</item>
+        <item>Euro</item>
+        <item>Dólar</item>
+        <item>Libra Esterlina</item>
+    </string-array>
+    <string-array name="moneda_a_conv">
+        <item>currency to convert</item>
+        <item>Peso Colombiano</item>
+        <item>Euro</item>
+        <item>Dólar</item>
+        <item>Libra Esterlina</item>
+    </string-array>
+</resources>
